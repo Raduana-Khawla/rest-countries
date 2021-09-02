@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries </title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+    <h3 class="text-center">REST COUNTRIES</h3>
+    <section class="container my-2">
+        <!-- Input Box -->
+        <div class="d-flex">
+          <input
+            type="text"
+            class="form-control me-2"
+            placeholder="Bangladesh"
+            id="search-input"
+          />
+          <button onclick="searchCountries()" class="btn btn-dark" id="search-btn">Search</button>
+        </div>
+      </section>
+      <div id="error" class="text-center"></div>
+      <section class="container">
+        <!-- Country Details -->
+ <div id="show-details" class="mx-auto">
+
+ </div>
+ </section>
+ <div  class="text-center">
+  <div id="spinner" class="spinner-border d-none" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  </div>
+ <section>
+        <div id="country-field"class="row row-cols-1 row-cols-md-3 g-4">
+          <div id="error"></div>
+        </div>
+    
+    
+      </section>
+      <script src="countries.js"></script>
+</body>
+</html>
